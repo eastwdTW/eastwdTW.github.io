@@ -4,6 +4,7 @@ updateclock();
 
 function toggleSound() {
 	var music = document.getElementById("bgm");
+	music.volume = 0.05;
 	music.play();
 }
 
