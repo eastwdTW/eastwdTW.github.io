@@ -2,9 +2,11 @@ setInterval(() => toggleSound(), 100);
 setInterval(() => updateclock(), 100);
 updateclock();
 
+var vol = document.getElementById("bgm");
+vol.volume = 0.01;
+
 function toggleSound() {
 	var music = document.getElementById("bgm");
-	music.volume = 0.0;
 	music.play();
 }
 
