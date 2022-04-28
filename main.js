@@ -1,9 +1,12 @@
-setInterval(() => toggleSound(), 100);
 setInterval(() => updateclock(), 100);
 updateclock();
 
 var vol = document.getElementById("bgm");
-vol.volume = 0.01;
+vol.volume = 0.1;
+
+var interact = document.body;
+interact.addEventListener("mousedown", () => toggleSound());
+interact.addEventListener("keydown", () => toggleSound());
 
 function toggleSound() {
 	var music = document.getElementById("bgm");
